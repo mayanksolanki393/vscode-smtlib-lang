@@ -1,0 +1,25 @@
+{
+  "name": "smtlib-lang",
+  "displayName": "smtlib-lang",
+  "description": "Language support for smt-lib in vscode",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "smtlib",
+      "aliases": ["SMT-LIB", "smtlib"],
+      "extensions": [".smt", ".smt2"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "smtlib",
+      "scopeName": "source.smt",
+      "path": "./syntaxes/smt.tmLanguage"
+    }]
+  }
+}
